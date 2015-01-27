@@ -1,0 +1,30 @@
+//
+// Prefix header for all source files of the 'Photoapp' target in the 'Photoapp' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import "TestFlight.h"
+    
+#endif
+#define UIColorFromRGB(rgbValue) [UIColor \
+colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 \
+green:((float)((rgbValue & 0xFF00) >> 8))/255.0 \
+blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define kOFFSET_FOR_KEYBOARD 80.0
+#define adminemail @"soumalya@esolzmail.com"
+//#define mydomainurl @"http://esolzdemos.com/lab1/iosphoto/"
+#define mydomainurl @"http://192.254.152.111/~photoxch/IosApp/"
+#define userurl @"http://192.254.152.111/~photoxch/user/"
+#define hostnameforlisting @"174.132.30.186"
+#define parent_url_for_ftp_image_listing @"http://192.254.152.111/~photoxch"
+//#define pathforlisting @"/www/dev/deb"
+#define tradematesusername @"wwwtrade"
+#define tradematespassword @"change123321"
